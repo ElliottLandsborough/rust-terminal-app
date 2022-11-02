@@ -4,19 +4,19 @@
 
 ## How to run
 
-### With docker
+With docker:
 
 ```bash
 docker-compose up
 ```
 
-### In bash
+In bash:
 
 ```bash
 cargo run
 ```
 
-To specify a github username inline:
+Specify a github username inline:
 
 ```bash
 echo "ElliottLandsborough" | rust-terminal-app
