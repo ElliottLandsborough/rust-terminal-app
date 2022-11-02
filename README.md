@@ -1,5 +1,7 @@
 # Rust Terminal App
 
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/ElliottLandsborough/rust-terminal-app/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/ElliottLandsborough/rust-terminal-app/tree/main)
+
 ## How to run
 
 ### With docker
