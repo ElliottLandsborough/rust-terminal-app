@@ -2,6 +2,7 @@ use rustyline::error::ReadlineError;
 use rustyline::{Editor};
 use std::collections::HashMap;
 use std::iter::FromIterator;
+use std::process;
 use serde::{Deserialize, Serialize};
 use reqwest::header::CONTENT_TYPE;
 use reqwest::header::USER_AGENT;

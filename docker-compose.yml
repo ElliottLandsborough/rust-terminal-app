@@ -3,7 +3,7 @@ version: '2'
 services: 
   rust:
     build: ./
-    working_dir: /usr/src/app
-    command: cargo run
+    working_dir: /usr/src/rust-terminal-app
+    command: echo "ElliottLandsborough" | rust-terminal-app
     volumes:
-      - ./:/usr/src/app
+      - ./:/usr/src/rust-terminal-app

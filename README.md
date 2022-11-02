@@ -11,4 +11,14 @@
 cargo run
 ```
 
-## How to test
+or to specify a github username inline:
+
+```bash
+echo "ElliottLandsborough" | rust-terminal-app
+```
+
+or with docker:
+
+```bash
+docker-compose up
+```
