@@ -6,7 +6,7 @@ https://github.com/ElliottLandsborough/rust-terminal-app
 
 ## Example Output
 
-```bash
+```ssh
 Please input a github username below:
 >> ElliottLandsborough
 Fetching preferred languages for 'ElliottLandsborough' on github...
