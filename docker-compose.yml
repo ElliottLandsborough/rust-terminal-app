@@ -1,0 +1,9 @@
+version: '2'
+
+services: 
+  rust:
+    build: ./
+    working_dir: /usr/src/app
+    command: cargo run
+    volumes:
+      - ./:/usr/src/app
