@@ -9,4 +9,4 @@ jobs:
       - run: cargo --version
       - run: cargo install --path .
       - run: cargo build
-      - run: echo "ElliottLandsborough" | rust-terminal-app
+      - run: bash -c 'echo "ElliottLandsborough" | rust-terminal-app'
