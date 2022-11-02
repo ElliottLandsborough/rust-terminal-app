@@ -7,6 +7,6 @@ jobs:
     steps:
       - checkout
       - run: cargo --version
-      - run: cargo install
+      - run: cargo install --path .
       - run: cargo build
       - run: echo "ElliottLandsborough" | rust-terminal-app
