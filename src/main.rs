@@ -32,6 +32,8 @@ fn main() {
             Ok(line) => {
                 let user_name = line.as_str().trim();
 
+                println!("Fetching preferred languages for '{}' on github...", user_name);
+
                 let repositories = match get_user_repositories_by_date(user_name) {
                     Ok(resp200) => resp200,
                     Err(error) => panic!("Problem with response: {:?}", error),
