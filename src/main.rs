@@ -45,15 +45,15 @@ fn main() {
             },
             Err(ReadlineError::Interrupted) => {
                 println!("CTRL-C");
-                break
+                process::exit(1);
             },
             Err(ReadlineError::Eof) => {
                 println!("CTRL-D");
-                break
+                process::exit(1);
             },
             Err(err) => {
                 println!("Error: {:?}", err);
-                break
+                process::exit(1);
             }
         }
     }
@@ -76,8 +76,7 @@ async fn get_user_repositories_by_date(user_name: &str) -> Result<Vec<Repository
 
     if resp200.status() != 200 {
         println!("{}", resp200.status());
-
-        return Ok(Vec::new());
+        process::exit(1);
     }
 
     let json = resp200.text().await?;
