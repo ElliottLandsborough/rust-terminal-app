@@ -1,24 +1,26 @@
 # Rust Terminal App
 
-## Dependencies
-
-- rust or docker
-- `libssl-dev` on Ubuntu or `openssl-devel` on Fedora
-
 ## How to run
+
+### With docker
+
+```bash
+docker-compose up
+```
+
+### In bash
 
 ```bash
 cargo run
 ```
 
-or to specify a github username inline:
+To specify a github username inline:
 
 ```bash
 echo "ElliottLandsborough" | rust-terminal-app
 ```
 
-or with docker:
+## Dependencies
 
-```bash
-docker-compose up
-```
+- rust or docker
+- `libssl-dev` on Ubuntu or `openssl-devel` on Fedora
