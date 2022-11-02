@@ -4,6 +4,6 @@ services:
   rust:
     build: ./
     working_dir: /usr/src/rust-terminal-app
-    command: echo "ElliottLandsborough" | rust-terminal-app
+    command: bash -c 'echo "ElliottLandsborough" | rust-terminal-app'
     volumes:
       - ./:/usr/src/rust-terminal-app
